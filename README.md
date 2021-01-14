@@ -1,2 +1,1 @@
-# ShakeItYourself
-fork of CodeMeMoreProject
+# CodeMeMore-project-1-Cocktail

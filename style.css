@@ -1,0 +1,1066 @@
+/* Police */
+@font-face {
+  font-family: "Kitchen Home Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Kitchen Home Regular"),
+    url("Police/KitchenHome-YzVz2.woff") format("woff");
+}
+@font-face {
+    font-family: 'BallparkWeiner';
+    src: url('Police/ballpark.eot');
+    src: url('Police/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('Police/ballpark.woff') format('woff'),
+         url('Police/ballpark.ttf') format('truetype'),
+         url('Police/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: "black_jackregular";
+  src: url("Police/blackjack-webfont.eot");
+  src: url("Police/blackjack-webfont.eot?#iefix") format("embedded-opentype"),
+    url("Police/blackjack-webfont.woff2") format("woff2"),
+    url("Police/blackjack-webfont.woff") format("woff"),
+    url("Police/blackjack-webfont.ttf") format("truetype"),
+    url("Police/blackjack-webfont.svg#black_jackregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.cards {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: rgb(1, 2, 63);
+  border-radius: 10px;
+  width: 250px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  border: 1px solid rgb(131, 79, 30);
+  box-shadow: 0 0 5px rgb(131, 79, 30);
+}
+.card-img {
+  border-radius: 10px 10px 0 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url("ginfizz.jpg");
+  height: 200px;
+  width: 100%;
+}
+.card-body {
+  padding: 10px 20px;
+}
+.card-body h2 {
+  margin: 10px 0px;
+}
+.card-button {
+  color: rgb(212, 16, 212);
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  background-color: rgb(49, 0, 41);
+  width: 100%;
+}
+.card-title {
+  text-align: center;
+}
+
+.mentions {
+  padding: 150px 60px;
+}
+
+#formulaire {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+}
+input, textarea {
+  margin: 5px 0px;
+}
+textarea {
+  border-radius: 5px;
+}
+
+/* Modification Principale */
+* {
+  /* font-size: 1em; */
+  box-sizing: border-box;
+}
+a {
+  color: white;
+}
+body {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  background: url("Image/imageFond.jpg") no-repeat center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 65vw;
+  height: 100%;
+  margin: 0;
+  background-color: rgb(0, 0, 28);
+  color: white;
+  box-shadow: 0px 0px 50px black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#menu ul li {
+  font-family: "Kitchen Home Regular", Arial, Helvetica, sans-serif;
+  font-size: 120%;
+  letter-spacing: 2px;
+}
+/* Header */
+#header {
+  border-bottom: 1px solid #834f1e;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  display: flex;
+}
+.identite {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 150px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.titre,
+.titreIndex {
+  height: 50px;
+  width: 70%;
+  text-shadow: rgb(216, 43, 193) 4px 4px 4px;
+  font-family: 'BallparkWeiner', Arial, Helvetica;
+  text-align: start;
+  font-size: 3em;
+  font-weight: normal;
+}
+.titre a {
+  color: white;
+  text-decoration: none;
+}
+#logosite {
+  width: 100%;
+  height: 100%;
+}
+.logo {
+  width: 30%;
+  height: 150px;
+  background-image: url("logo.jpg");
+  background-size: cover;
+}
+/* article */
+#choix {
+  width: 100%;
+  height: 300px;
+
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choisir {
+  width: 40%;
+  height: 80%;
+  border: 1px solid rgb(131, 79, 30);
+  box-shadow: 0 0 5px rgb(131, 79, 30);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.choisir form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#recherche {
+  margin-top: 20px;
+  width: 50%;
+  align-self: center;
+  border-radius: 20px;
+  border: 1px solid rgb(131, 79, 30);
+  box-shadow: 0 0 5px rgb(131, 79, 30);
+  color: white;
+  background-color: rgb(0, 0, 28);
+}
+.choisir label {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 130%;
+  letter-spacing: 3px;
+  font-family: "Kitchen Home Regular";
+  /* text-shadow: rgb(131, 79, 30) 7px 7px 7px; */
+  height: 30px;
+}
+.choisir select {
+  align-self: center;
+  background-color: rgb(0, 0, 28);
+  width: 70%;
+  color: white;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 1px solid rgb(131, 79, 30);
+  box-shadow: 0 0 5px rgb(131, 79, 30);
+}
+.choisir select:hover {
+  background-color: rgb(0, 0, 28);
+}
+.choisir option:hover {
+  background-color: rgb(0, 0, 28);
+}
+.choisir option {
+  width: 60%;
+  padding-top: 5px;
+  margin-top: 5px;
+}
+#proposition {
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+  margin-bottom: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.cocktail {
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 28);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.cocktail:hover {
+  border: 1px solid rgb(131, 79, 30);
+  box-shadow: 0 0 5px rgb(131, 79, 30);
+}
+.cocktail h2 {
+  color: white;
+  font-size: 130%;
+  letter-spacing: 3px;
+  font-family: "Kitchen Home Regular";
+}
+.imgCocktail {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px rgb(131, 79, 30);
+}
+.imgCocktailhover {
+  border-radius: 5px 5px 20px 20px;
+}
+/* TEMPLATE A PROPOS */
+.about {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 50px 20px 20px;
+  flex-wrap: wrap;
+  font-family: "Lato";
+  color: #834f1e;
+}
+
+.about h2 {
+  width: 400px;
+  text-align: center;
+  font-family: "black_jackregular";
+  font-size: 50px;
+  text-shadow: rgb(216, 43, 193) 4px 4px 4px;
+  color: white;
+  margin-top: 10px;
+  padding-top: 20px;
+  box-shadow: inset 0px 3px 5px -3px #834f1e;
+}
+
+.about-text {
+  justify-content: center;
+  text-align: center;
+  font-family: "Lato";
+}
+
+.abdou {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-around;
+  padding: 50px 50px 20px 20px;
+  flex-wrap: wrap;
+  margin-bottom: 150px;
+}
+
+.photoAbdou {
+  min-width: 210px;
+  width: 30%;
+  border-radius: 20px;
+  box-shadow: 0 0 10px black;
+}
+
+.descriptionAbdou {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0 0 50px;
+  color: white;
+  font-family: "Lato";
+}
+
+.descriptionAbdou h2 {
+  font-size: 25px;
+  font-family: "Kitchen Home Regular", Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  text-shadow: grey 1px 1px 0px;
+}
+
+/* PAGE TUTORIEL */
+.titreTutorielPage {
+  text-align: center;
+  font-family: "black_jackregular";
+  font-size: 50px;
+  text-shadow: rgb(216, 43, 193) 4px 4px 4px;
+  color: white;
+  margin-top: 10px;
+  padding-top: 20px;
+}
+.titreMateriel,
+.titreTuto {
+  text-align: left;
+  font-family: "Kitchen Home Regular", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: grey 1px 1px 0px;
+  color: #834f1e;
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+.materiel,
+.tutoriel {
+  height: 100%;
+}
+.tutoriel {
+  margin-top: 40px;
+}
+.elementsMateriel,
+.elementTuto1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 80%;
+}
+.elementTuto2 {
+  display: flex;
+  height: 80%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.elementTuto1 {
+  flex-direction: column;
+  align-items: center;
+}
+.materielCard {
+  width: 250px;
+  height: 350px;
+  border: 1px solid #834f1e;
+  box-shadow: inset 0px 3px 5px -3px #834f1e;
+  border-radius: 20px;
+  margin: 30px 40px 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tutoCardMateriel {
+  display: flex;
+  flex-direction: column;
+}
+.materielCard h3,
+.tutoCardMateriel h3,
+.tutoCardIngredient h3 {
+  text-align: center;
+  font-family: "black_jackregular";
+  font-size: 150%;
+}
+.materielCard h3 {
+  margin-bottom: -10px;
+}
+.tutoCardMateriel h3 {
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #834f1e;
+}
+.tutoCardMateriel p {
+  flex-wrap: wrap;
+}
+.tutoCardIngredient {
+  margin: 30px;
+  width: 330px;
+  height: 420px;
+  border: 1px solid #834f1e;
+  border-radius: 20px;
+  overflow: auto;
+}
+.tutoCardIngredient li {
+  padding-right: 20px ;
+  list-style: none;
+  padding-top: 5px;
+}
+.materielCard p {
+  text-align: center;
+  font-family: "Lato";
+  padding-bottom: 10px;
+}
+.imgShaker,
+.imgSpoon,
+.imgJigger,
+.imgStrainer,
+.imgFineStrainer {
+  width: 100%;
+  height: 250px;
+  align-self: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.imgShaker {
+  background: url(Image/imgShaker.jpg) no-repeat center fixed;
+  background-attachment: local;
+}
+.imgSpoon {
+  background: url(Image/imgSpoon.jpg) no-repeat center fixed;
+  background-attachment: local;
+  background-position-y: -10px;
+}
+.imgJigger {
+  background: url(Image/imgJigger.jpg) no-repeat center fixed;
+  background-attachment: local;
+}
+.imgStrainer {
+  background: url(Image/imgStrainer.jpg) no-repeat center fixed;
+  background-attachment: local;
+  background-position: left;
+}
+.imgFineStrainer {
+  background: url(Image/imgFineStrainer.jpg) no-repeat center fixed;
+  background-attachment: local;
+}
+.video {
+  border: 0px;
+  border-radius: 20px;
+  width: 560px;
+  height: 315px;
+  align-self: center;
+}
+.video:hover {
+  box-shadow: #834f1e 0px 0px 5px;
+}
+/* Footer */
+footer{
+  text-align: center;
+  border-top: 0.1px solid rgb(108, 117, 125);
+  margin-top: 30px;
+}
+.abus{
+  font-family:'Trebuchet MS', Arial, sans-serif;
+  text-align: center;
+  font-size: 13px;
+}
+#infoservice{
+  color: rgb(173, 181, 189);
+}
+#infoservice:hover{
+  text-decoration:underline
+}
+.contenu-footer {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  width: 65vw;
+}
+.contenu-footer li {
+  list-style: none;
+}
+.contenu-footer a {
+  text-decoration: none;
+  color: lightgrey;;
+}
+
+.telechargement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imgstore {
+  width: 80%;
+  display:flex;
+  flex-direction: row;
+}
+.titreTelechargement {
+  margin-bottom:13px;
+  margin-top:13px;
+  font-size:13px;
+}
+.telechargement img {
+  margin-top: 10px;
+  width: 100px;
+  height: 32px;
+  border-radius: 5px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.titre-contact{
+  margin-bottom:13px;
+  margin-top:13px;
+  font-size:13px;
+}
+.contact-list{
+  font-size:12px;
+  margin:3px;
+  text-decoration: none;
+  color:lightgrey;
+}
+#formulairecontact:hover{
+  text-decoration:underline white;
+}
+.reseaux {
+  text-align: center;
+}
+.suis-nous{
+  margin-bottom:13px;
+  margin-top:13px;
+  font-size:13px;
+}
+
+.listeMedia img {
+  width: 30px;
+  border-radius: 5px;
+}
+.media {
+  list-style: none;
+  padding-right: 5px;
+  margin: 5px;
+}
+
+.listeMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-around;
+  font-size:13px;
+  color: lightgrey;
+  padding: 15px;
+}
+.copyright a {
+  text-decoration: none;
+  color: lightgrey;
+}
+.copyright a:hover {
+  text-decoration: underline white; 
+}
+/* Template Recette  */
+.recetteFont {
+  color: #834f1e;
+  font-family: "Lato";
+}
+
+.recetteFont h2 {
+  text-align: center;
+  font-family: "black_jackregular";
+  font-size: 50px;
+  text-shadow: rgb(216, 43, 193) 4px 4px 4px;
+  color: white;
+  margin-top: 10px;
+  padding-top: 20px;
+}
+
+.descriptif h3,
+.listeIngredients h3 {
+  font-size: 25px;
+}
+.presentation {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-around;
+  padding: 50px 50px 20px 20px;
+  flex-wrap: wrap;
+}
+.photoCocktail {
+  min-width: 210px;
+  width: 30%;
+}
+.photo {
+  border-radius: 100%;
+  box-shadow: 0 0 10px white;
+}
+
+.descriptif {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0 0 50px;
+  color: white;
+}
+
+.listeIngredients {
+  padding-left: 20px;
+  color: #9a16ac;
+  width: 100%;
+  border: 1px solid rgb(131, 79, 30);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(131, 79, 30);
+  background-color: white;
+}
+
+.ingredientCocktail {
+  display: flex;
+  margin: 50px 50px 20px 50px;
+}
+
+.preparation {
+  text-align: center;
+  margin-bottom: 100px;
+}
+/* PAGE NOS RECETTES */
+.titreNosRecettes {
+  margin: 20px;
+  color: rgb(73, 22, 80);
+  font-family: "Helvetica Neue";
+  text-align: center;
+  font-size: 50px;
+}
+
+.titreCard {
+  font-size: 200%;
+  padding: 30px;
+  position: left;
+  font-family: "black_jackregular";
+  font-weight: bold;
+  text-shadow: 1px 1px 0 white;
+  font-weight: bold;
+  color: rgb(131, 79, 30);
+  letter-spacing: 1px;
+}
+
+.cardCocktail {
+  width: 80%;
+  height: 450px;
+  background: rgba(128, 55, 88, 0.966);
+  margin: 20px auto;
+  justify-content: left;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgb(128, 55, 88);
+}
+
+.cardCocktail a {
+  text-decoration: none;
+  color: white;
+}
+
+.blocCocktail {
+  min-width: 250px;
+  height: 400px;
+  position: relative;
+  left: 0;
+  text-align: center;
+  margin: 20px;
+  background: rgb(112, 60, 47);
+  transition: 0.5s;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+}
+
+a {
+  text-decoration: none;
+}
+.titreNosRecettes {
+  font-family: "black_jackregular", Arial, Helvetica, sans-serif;
+  font-size: 300%;
+  color: white;
+  /* letter-spacing: 1px; */
+  text-shadow: 4px 4px 8px rgba(128, 55, 88, 0.966);
+  margin-top: 10px;
+  padding-top: 20px;
+  /* border-top: 1px solid #834f1e;
+  box-shadow: inset 0px 3px 5px -3px #834f1e; */
+}
+.recettesPolice {
+  color: white;
+  font-family: "Kitchen Home Regular";
+  padding: 5px;
+  letter-spacing: 3px;
+}
+
+.blocCocktail:hover {
+  background-color: rgb(0, 0, 49);
+}
+.imgRecette {
+  margin-right: 20px;
+  width: 250px;
+  height: 350px;
+  padding: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+}
+
+/*================================*/
+/*=== Partie sur le Swipe Menu ===*/
+/*================================*/
+/* Menu burger */
+#menu-burger {
+  position: absolute;
+  top: 4.5em;
+  right: 2.5em;
+  display: inline-block;
+  cursor: pointer;
+}
+#menu-burger .bar1,
+#menu-burger .bar2,
+#menu-burger .bar3 {
+  width: 32px;
+  height: 5px;
+  background-color: rgb(131, 79, 30);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+#menu-burger:hover {
+  opacity: 0.75;
+  transition: 0.5s;
+}
+#menu-burger.clicked .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+#menu-burger.clicked .bar2 {
+  opacity: 0;
+}
+#menu-burger.clicked .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Main menu (slide) */
+#menu {
+  position: fixed;
+  z-index: 5555;
+  left: -25%;
+  top: auto;
+  background: rgb(0, 0, 28);
+  padding: 4em 2em;
+  width: 25%;
+  min-height: 100%;
+}
+#menu ul li {
+  list-style: none;
+}
+#menu ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  background: #2c3e50;
+  transition: background 0.5s;
+  padding: 1em;
+  text-align: center;
+  margin-bottom: 1em;
+  box-shadow: 0 0 5px rgb(216, 43, 193);
+  border-radius: 20px;
+}
+#menu ul li a:hover {
+  background: rgb(99, 19, 88);
+  transition: background 0.5s;
+}
+#menu.visible {
+  animation: 0.5s slideRight ease-in forwards;
+  transition-delay: 0;
+}
+#menu.invisible {
+  animation: 1s slideLeft ease-out forwards;
+  transition-delay: 0;
+}
+
+/* Animations pour le menu slide */
+@keyframes slideRight {
+  from {
+    left: -25%;
+  }
+  to {
+    left: 0%;
+  }
+}
+@-webkit-keyframes slideRight {
+  from {
+    left: -25%;
+  }
+  to {
+    left: 0%;
+  }
+}
+@keyframes slideLeft {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -25%;
+  }
+}
+@-webkit-keyframes slideLeft {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -25%;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  #menu-burger {
+    position: absolute;
+    top: 5.5em;
+  }
+  #menu {
+    left: -50%;
+    width: 50%;
+  }
+  #menu-burger.clicked {
+    position: fixed;
+  }
+  #main-block,
+  #second-block {
+    padding: 4em 2em;
+  }
+
+  /* header media 1024 */
+  #logosite,
+  .logo {
+    display: none;
+  }
+  .titre,
+  .titreIndex {
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  /* index media 1024 */
+  .choisir {
+    width: 60%;
+  }
+  .cocktail {
+    margin-bottom: 20px;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    border: 1px solid rgb(131, 79, 30);
+    box-shadow: 0 0 5px rgb(131, 79, 30);
+  }
+  /* page tuto media 1024 */
+  .video {
+    width: 392px;
+    height: 220.5px;
+  }
+  /* Footer media 1024 */
+  .contact,
+  .telechargement,
+  .reseaux,
+  .politique,
+  .mention,
+  .condition {
+    display: none;
+  }
+
+  /* Animations pour le menu slide */
+  @keyframes slideRight {
+    from {
+      left: -50%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+  @-webkit-keyframes slideRight {
+    from {
+      left: -50%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+  @keyframes slideLeft {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -50%;
+    }
+  }
+  @-webkit-keyframes slideLeft {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -50%;
+    }
+  }
+}
+@media (max-width: 600px) {
+  #menu-burger {
+    top: 7em;
+    right: 2em;
+    z-index: 9999;
+  }
+  #menu {
+    left: -100%;
+    width: 100%;
+  }
+  #second-block #google-maps {
+    width: 100%;
+    margin-right: 0;
+  }
+  #second-block #contact-form {
+    width: 100%;
+    margin-top: 2em;
+  }
+  /* principal media 600 */
+  .container {
+    width: 100vw;
+  }
+  /* header media 600 */
+  .titre,
+  .titreIndex {
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+  }
+  /* index media 600 */
+  .choisir option {
+    width: 70%;
+    padding-top: 5px;
+    margin-top: 5px;
+  }
+  .choisir select {
+    margin-top: 10px;
+  }
+  #choix {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .choisir {
+    width: 90%;
+    justify-content: space-between;
+    margin: 0;
+  }
+  #proposition {
+    display: none;
+  }
+  .cocktailMois,
+  .cocktailFavori {
+    display: none;
+  }
+  /* page tuto media 600 */
+  .video {
+    width: 336px;
+    height: 189px;
+  }
+  /* footer media 600 */
+  .mention,
+  .politique,
+  .condition {
+    display: none;
+  }
+  /* Animations pour le menu slide */
+  @keyframes slideRight {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+  @-webkit-keyframes slideRight {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+  @keyframes slideLeft {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -100%;
+    }
+  }
+  @-webkit-keyframes slideLeft {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -100%;
+    }
+  }
+}
+
+@media (max-width: 315px) {
+  #menu-burger {
+    position: absolute;
+    top: 1em;
+    right: 2em;
+  }
+  /* header media 315 */
+  .titre {
+    display: none;
+  }
+  /* Index */
+  #choix {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .choisir {
+    width: 90%;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .choisir option {
+    width: 90%;
+    padding-top: 3px;
+    margin-top: 2px;
+  }
+  .choisir select {
+    margin-top: 5px;
+  }
+  .choisir form {
+    justify-content: space-between;
+  }
+}
